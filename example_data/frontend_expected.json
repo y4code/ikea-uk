@@ -1,0 +1,35 @@
+{
+    "name": "Living Room",
+    "key": "living_room",
+    "url": "",
+    "category": [
+        {
+            "name": "Beds",
+            "url": "",
+            "products": [
+                {
+                    "name": "Single Beds",
+                    "url": "",
+                    "img": "",
+                    "price": "100",
+                    "color": "red"
+                },
+                {
+                    "name": "Double Beds",
+                    "url": "",
+                    "img": "",
+                    "price": "200",
+                    "color": "blue"
+                }
+            ]
+        },
+        {
+            "name": "Mattresses",
+            "url": ""
+        },
+        {
+            "name": "Wardrobes",
+            "url": ""
+        }
+    ]
+}
