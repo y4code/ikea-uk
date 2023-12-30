@@ -1,87 +1,23 @@
 [
   {
     "room_name": "",
-    "category": [
+    "products": [
       {
-        "category_name": "",
-        "products": [
-          {
-            "name": "",
-            "url": "",
-            "image_urls": "",
-            "price": "",
-            "description": ""
-          },
-          {
-            "name": "",
-            "url": "",
-            "image_urls": "",
-            "price": "",
-            "description": ""
-          }
-        ]
+        "name": "",
+        "url": "",
+        "image_urls": "",
+        "price": "",
+        "description": "",
+        "category_name":""
+
       },
       {
-        "category_name": "",
-        "products": [
-          {
-            "name": "",
-            "url": "",
-            "image_urls": "",
-            "price": "",
-            "description": ""
-          },
-          {
-            "name": "",
-            "url": "",
-            "image_urls": "",
-            "price": "",
-            "description": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "room_name": "",
-    "category": [
-      {
-        "category_name": "",
-        "products": [
-          {
-            "name": "",
-            "url": "",
-            "image_urls": "",
-            "price": "",
-            "description": ""
-          },
-          {
-            "name": "",
-            "url": "",
-            "image_urls": "",
-            "price": "",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "category_name": "",
-        "products": [
-          {
-            "name": "",
-            "url": "",
-            "image_urls": "",
-            "price": "",
-            "description": ""
-          },
-          {
-            "name": "",
-            "url": "",
-            "image_urls": "",
-            "price": "",
-            "description": ""
-          }
-        ]
+        "name": "",
+        "url": "",
+        "image_urls": "",
+        "price": "",
+        "description": "",
+        "category_name":""
       }
     ]
   }

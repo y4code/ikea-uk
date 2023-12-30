@@ -1,0 +1,47 @@
+[
+  {
+    "room_name": "Garden",
+    "products": [
+      {
+        "name": "HYLLIS",
+        "url": "https://www.ikea.com/gb/en/p/hyllis-cover-transparent-in-outdoor-10428332/",
+        "image_urls": "https://www.ikea.com/gb/en/images/products/hyllis-cover-transparent-in-outdoor__0911698_pe712762_s5.jpg",
+        "price": 3.0,
+        "description": "Cover white",
+        "category_name": "Garden storage"
+      },
+      {
+        "name": "SOMMARL\u00c5NKE",
+        "url": "https://www.ikea.com/gb/en/p/sommarlanke-led-decorative-table-lamp-white-blue-battery-operated-outdoor-70544649/",
+        "image_urls": "https://www.ikea.com/gb/en/images/products/sommarlanke-led-decorative-table-lamp-white-blue-battery-operated-outdoor__1157334_pe887628_s5.jpg",
+        "price": 4.0,
+        "description": "LED decorative table lamp multiple colors",
+        "category_name": "Outdoor lighting"
+      },
+      {
+        "name": "\u00c4DELL\u00d6VSKOG",
+        "url": "https://www.ikea.com/gb/en/p/aedelloevskog-led-block-candle-white-in-outdoor-30520259/",
+        "image_urls": "https://www.ikea.com/gb/en/images/products/aedelloevskog-led-block-candle-white-in-outdoor__1052280_pe846038_s5.jpg",
+        "price": 4.0,
+        "description": "LED block candle white",
+        "category_name": "Outdoor lighting"
+      },
+      {
+        "name": "TORDH",
+        "url": "https://www.ikea.com/gb/en/p/tordh-shelf-outdoor-brown-stained-80457533/",
+        "image_urls": "https://www.ikea.com/gb/en/images/products/tordh-shelf-outdoor-brown-stained__0763268_pe761786_s5.jpg",
+        "price": 5.0,
+        "description": "Shelf, outdoor brown",
+        "category_name": "Garden storage"
+      },
+      {
+        "name": "TORDH",
+        "url": "https://www.ikea.com/gb/en/p/tordh-post-outdoor-brown-stained-20430914/",
+        "image_urls": "https://www.ikea.com/gb/en/images/products/tordh-post-outdoor-brown-stained__0763261_pe761780_s5.jpg",
+        "price": 5.0,
+        "description": "Post, outdoor brown",
+        "category_name": "Garden storage"
+      }
+    ]
+  }
+]
