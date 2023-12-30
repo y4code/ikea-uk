@@ -1,35 +1,88 @@
-{
-    "name": "Living Room",
-    "key": "living_room",
-    "url": "",
+[
+  {
+    "room_name": "",
     "category": [
-        {
-            "name": "Beds",
+      {
+        "category_name": "",
+        "products": [
+          {
+            "name": "",
             "url": "",
-            "products": [
-                {
-                    "name": "Single Beds",
-                    "url": "",
-                    "img": "",
-                    "price": "100",
-                    "color": "red"
-                },
-                {
-                    "name": "Double Beds",
-                    "url": "",
-                    "img": "",
-                    "price": "200",
-                    "color": "blue"
-                }
-            ]
-        },
-        {
-            "name": "Mattresses",
-            "url": ""
-        },
-        {
-            "name": "Wardrobes",
-            "url": ""
-        }
+            "image_urls": "",
+            "price": "",
+            "description": ""
+          },
+          {
+            "name": "",
+            "url": "",
+            "image_urls": "",
+            "price": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "category_name": "",
+        "products": [
+          {
+            "name": "",
+            "url": "",
+            "image_urls": "",
+            "price": "",
+            "description": ""
+          },
+          {
+            "name": "",
+            "url": "",
+            "image_urls": "",
+            "price": "",
+            "description": ""
+          }
+        ]
+      }
     ]
-}
+  },
+  {
+    "room_name": "",
+    "category": [
+      {
+        "category_name": "",
+        "products": [
+          {
+            "name": "",
+            "url": "",
+            "image_urls": "",
+            "price": "",
+            "description": ""
+          },
+          {
+            "name": "",
+            "url": "",
+            "image_urls": "",
+            "price": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "category_name": "",
+        "products": [
+          {
+            "name": "",
+            "url": "",
+            "image_urls": "",
+            "price": "",
+            "description": ""
+          },
+          {
+            "name": "",
+            "url": "",
+            "image_urls": "",
+            "price": "",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]
