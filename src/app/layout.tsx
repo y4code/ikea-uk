@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body className={`${inter.className} font-bold`}>
         <main>
           {children}
+          <Analytics />
         </main>
         <footer className="flex justify-center text-gray-700 py-4 font-bold dark:text-white">
           <a href="https://github.com/y4code/ikea-uk" className="hover:underline mx-3">GitHub</a>
