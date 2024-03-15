@@ -1,5 +1,5 @@
 import { RoomColorMap, RoomMap, RoomName } from "@/app/const";
-import { RoomNameContext } from "@/app/page";
+import { RoomNameContext } from "@/app/context/room-name-context";
 import Image from "next/image";
 import { useContext } from "react";
 

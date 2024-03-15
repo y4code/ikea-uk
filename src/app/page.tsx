@@ -1,19 +1,12 @@
 'use client';
-import Image from "next/image";
-
-// import data from "../../public/data.json";
-import { Product, Room, RoomNameContextType } from "./types";
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { RoomName } from "./const";
 import Logo from "@/components/logo";
 import Banner from "@/components/banner";
 import Category from "@/components/category";
 import CardList from "@/components/card-list";
+import { RoomNameContext } from "./context/room-name-context";
 
-export const RoomNameContext = createContext<Partial<RoomNameContextType>>({
-  roomName: RoomName.All,
-  isDarkMode: false,
-});
 
 export default function Home() {
   const [roomName, setRoomName] = useState<RoomName>(RoomName.All);

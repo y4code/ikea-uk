@@ -1,11 +1,11 @@
 import { RoomName } from "@/app/const";
-import { RoomNameContext } from "@/app/page";
 import arrowRight from "../../public/icons/arrow-right.svg";
 import { useContext, useMemo } from "react";
 import Image from "next/image";
 import { shimmer, toBase64 } from "@/util/image-processing";
 import { Product } from "@/app/types";
 import data from "../../data.json";
+import { RoomNameContext } from "@/app/context/room-name-context";
 
 type CardProps = {
     title: string;
