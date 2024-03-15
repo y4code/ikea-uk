@@ -13,6 +13,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'ikea-blue': '#1a52bf',
+        'ikea-yellow': '#FBD914',
+        'ikea-orange': '#b76d32',
+        'dark-black': '#35363a',
+      },
     },
   },
   plugins: [],

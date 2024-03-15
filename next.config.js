@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
-        hostname: "www.ikea.com",
+        protocol: "https",
+        hostname: 'www.ikea.com',
+        port: '',
+        pathname: "/gb/**",
       },
     ],
   },
