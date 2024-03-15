@@ -11,14 +11,12 @@ import Category from "@/components/category";
 import CardList from "@/components/card-list";
 
 export const RoomNameContext = createContext<Partial<RoomNameContextType>>({
-  // TODO: use other default type
-  roomName: RoomName.Garden,
+  roomName: RoomName.All,
   isDarkMode: false,
 });
 
 export default function Home() {
-  // TODO: use other default type
-  const [roomName, setRoomName] = useState<RoomName>(RoomName.Garden);
+  const [roomName, setRoomName] = useState<RoomName>(RoomName.All);
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   useEffect(() => {

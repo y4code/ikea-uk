@@ -49,7 +49,12 @@ seen = set()
 repeated = []
 for item in organized_json:
     for product in item["products"]:
-        key = (product["name"], product["url"], product["price"], product["category_name"])
+        key = (
+            product["name"],
+            product["url"],
+            product["price"],
+            product["category_name"],
+        )
         if key in seen:
             repeated.append(key)
         else:
@@ -61,6 +66,11 @@ if repeated:
         print(f"名称：{name}\nURL：{url}\n价格：{price}\n类别：{category}")
 else:
     print("没有重复的产品")
+
+# 打印所有room_name
+print("所有room_name：")
+for item in organized_json:
+    print(item["room_name"])
 
 
 # 将处理后的结果保存为data.json

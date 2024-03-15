@@ -1,6 +1,5 @@
 import { RoomName } from "@/app/const";
 import { RoomNameContext } from "@/app/page";
-// import arrowRight from "@/public/icons/arrow-right.svg";
 import arrowRight from "../../public/icons/arrow-right.svg";
 import { useContext, useMemo } from "react";
 import Image from "next/image";
@@ -76,35 +75,10 @@ export default function CardList() {
     );
 }
 
-// {
-//     "room_name": "Laundry",
-//     "products": [
-//       {
-//         "name": "SLIBB",
-//         "url": "https://www.ikea.com/gb/en/p/slibb-hanger-with-8-grip-clips-green-30567727/",
-//         "image_urls": "https://www.ikea.com/gb/en/images/products/slibb-hanger-with-8-grip-clips-green__1232139_pe916424_s5.jpg",
-//         "price": 0.5,
-//         "description": "Hanger with 8 grip clips green",
-//         "category_name": "Laundry accessories"
-//       },
-//       {
-//         "name": "RENSHACKA",
-//         "url": "https://www.ikea.com/gb/en/p/renshacka-clothes-cover-transparent-white-50530101/",
-//         "image_urls": "https://www.ikea.com/gb/en/images/products/renshacka-clothes-cover-transparent-white__1085384_pe860087_s5.jpg",
-//         "price": 0.75,
-//         "description": "Clothes cover white",
-//         "category_name": "Hanging clothes organisers"
-//       },
-// function useProducts(roomName: RoomName): { products: Room[] } {
-//     const products = useMemo(() => getProducts(roomName), [roomName])
-//     return { products }
-// }
-
 function getProducts(roomName: RoomName): Product[] {
-    const roomData = data.find((item) => item.room_name === roomName);
-    if (roomData) {
-        const { products } = roomData;
-        return products.sort((a, b) => a.price - b.price);
-    }
-    return [];
+    return (roomName === RoomName.All
+        ? data.flatMap((item) => item.products)
+        : data.find((item) => item.room_name === roomName)?.products || []).sort((a, b) => a.price - b.price);
 }
+
+export { getProducts };
