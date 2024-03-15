@@ -63,7 +63,7 @@ export default function CardList() {
         <div className="mt-6 px-5 relative sm:px-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6 sm:gap-x-6 sm:gap-y-8">
             {products.map((product) => (
                 <Card
-                    key={`${product.name}-${product.url}-${product.price}-${product.category_name}`}
+                    key={`${product.name}-${product.url}-${product.price}`}
                     title={product.name}
                     description={product.description}
                     imageSrc={product.image_urls}
@@ -78,7 +78,12 @@ export default function CardList() {
 function getProducts(roomName: RoomName): Product[] {
     return (roomName === RoomName.All
         ? data.flatMap((item) => item.products)
-        : data.find((item) => item.room_name === roomName)?.products || []).sort((a, b) => a.price - b.price);
+        : data.find((item) => item.room_name === roomName)?.products || [])
+        .filter((product, index, self) => {
+            const firstIndex = self.findIndex((p) => p.name === product.name && p.url === product.url && p.price === product.price);
+            return index === firstIndex;
+        })
+        .sort((a, b) => a.price - b.price)
 }
 
 export { getProducts };
