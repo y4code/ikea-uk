@@ -41,7 +41,7 @@ export default function Banner() {
           {RoomMap[roomName as RoomName]}
         </div>
         <div className="text-white text-xs mt-8 font-normal">
-          Data from IKEA Official Website | Updated Weekly
+          Data from IKEA UK Official Website | Updated Weekly
         </div>
       </div>
     </div>

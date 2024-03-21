@@ -49,8 +49,7 @@ export default function RootLayout({
         <footer className="flex justify-center text-gray-700 py-4 font-bold dark:text-white">
           <a href="https://github.com/y4code/ikea-uk" className="hover:underline mx-3">GitHub</a>
           {" · "}
-          <a href="https://ikea-lp.netlify.app" className="hover:underline mx-3">Inspired by ikea-lp
-          </a>
+          <a href="https://ikea-lp.netlify.app" className="hover:underline mx-3">Inspired by ikea-low-price</a>
         </footer>
       </body>
     </html>

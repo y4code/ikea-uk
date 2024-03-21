@@ -1,10 +1,68 @@
-# ikea-uk
+<img src="./screenshot.png" alt="示例图片" width=1000 style="
+    margin: 50px auto;
+    display: block;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+ ">
 
-## Reference
-- [Scrapy tutorial](https://docs.scrapy.org/en/latest/intro/tutorial.html)
-- [A Stackoverflow about scrape IKEA site](https://stackoverflow.com/questions/69751750/unable-to-go-to-next-page-with-scrapy)
-- [Inspiration and frontend reference](https://ikea-lp.netlify.app/)
+<div align="center">
 
+# IKEA UK Product Scraper
+
+![Vercel Deploy](https://therealsujitk-vercel-badge.vercel.app/?app=ikea-cheap)
+
+</div>
+
+This project is a web scraper for IKEA UK's website. It uses Scrapy to scrape product data and Next.js for the frontend.
+
+
+
+## Features
+
+- Discover the latest cheapest products from IKEA UK
+- Categorize products by room type
+
+
+## Prerequisites
+
+Python scraper
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+Frontend
+
+```bash
+npm install
+# or recommend
+bun
+```
+## Scrape and format data
+
+```bash
+rm data.jsonl && touch data.jsonl
+
+source venv/bin/activate
+
+scrapy runspider main.py -o data.jsonl
+
+python3 filter.py
+```
+
+- Display the data on a frontend page
+
+```bash
+npm run dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -22,23 +80,13 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Scrapy and Next.js, take a look at the following resources:
 
+- [Scrapy Documentation](https://docs.scrapy.org/en/latest/index.html) - learn about Scrapy features and API.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgments
+- [A Stackoverflow about scrape IKEA website](https://stackoverflow.com/questions/69751750/unable-to-go-to-next-page-with-scrapy)
+- Inpiration from 宜家特价榜 [https://ikea-lp.netlify.app](https://ikea-lp.netlify.app/)
