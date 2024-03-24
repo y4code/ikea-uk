@@ -8,27 +8,27 @@ const inter = Inter({ subsets: ['latin'] })
 
 export function generateMetadata(): Metadata {
   return {
-    metadataBase: new URL("https://ikea-lp.netlify.app/"),
-    title: "IKEA Low Price Products",
-    description: "IKEA Low Price Products | IKEA Low Price Goods; IKEA Discount Products; IKEA Specials List",
+    metadataBase: new URL("https://ikea-cheap.vercel.app/"),
+    title: "IKEA UK Low Price Products",
+    description: "IKEA UK Low Price Products | IKEA UK Low Price Goods; IKEA Discount Products; IKEA Specials List",
     openGraph: {
       type: "website",
-      siteName: "IKEA Low Price Products",
-      title: "IKEA Low Price Products",
-      description: "IKEA Low Price Products | IKEA Low Price Goods; IKEA Discount Products; IKEA Specials List",
-      url: "https://ikea-lp.netlify.app/",
-      images: [{ url: "https://i.imgur.com/tzg1pDf.png" }],
+      siteName: "IKEA UK Low Price Products",
+      title: "IKEA UK Low Price Products",
+      description: "IKEA UK Low Price Products | IKEA UK Low Price Goods; IKEA Discount Products; IKEA Specials List",
+      url: "https://ikea-cheap.vercel.app/",
+      images: [{ url: "https://github.com/y4code/ikea-uk/raw/main/screenshot.png" }],
     },
     twitter: {
       creator: "@y4code",
       site: "@y4code",
-      title: "IKEA Low Price Products",
-      description: "IKEA Low Price Products | IKEA Low Price Goods; IKEA Discount Products; IKEA Specials List",
-      images: [{ url: "https://i.imgur.com/tzg1pDf.png" }],
+      title: "IKEA UK Low Price Products",
+      description: "IKEA UK Low Price Products | IKEA UK Low Price Goods; IKEA Discount Products; IKEA Specials List",
+      images: [{ url: "https://github.com/y4code/ikea-uk/raw/main/screenshot.png" }],
     },
     appleWebApp: {
       statusBarStyle: "black-translucent",
-      title: "IKEA Low Price Products",
+      title: "IKEA UK Low Price Products",
     },
   }
 };
