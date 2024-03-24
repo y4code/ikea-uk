@@ -25,7 +25,7 @@ export default function Banner() {
               height: 30,
               maxWidth: "100%",
             }} />
-          <span className="font-bold text-2xl mx-3">IKEA Special Offers</span>
+          <span className="font-bold text-2xl mx-3">IKEA UK Special Offers</span>
           <Image
             width={14}
             height={30}
